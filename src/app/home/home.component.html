@@ -1,0 +1,36 @@
+<section>
+
+    <input type="text" (keydown.enter)="listarImoveisComFiltro(texto.value)" #texto placeholder="Filtrar por cidade">
+
+    <button class="primary" type="button" (click)="listarImoveisComFiltro(texto.value)"
+        (keydown.enter)="listarImoveisComFiltro(texto.value)"> Filtar</button>
+    <button class="primary alinha" type="button" (click)="mostrarFavoritos()">Favoritos</button>
+    <button class="primary alinha" type="button" (click)="mostrarTodos(true)">Mostrar Todos</button>
+    <input type="radio" class="alinha" name="tipo" (click)="filtrarPorTipo('apartamento')" id="radioApartaento" />
+    <label for="apartamento" class="alinha">Apartamento</label>
+    <input type="radio" class="alinha" name="tipo" (click)="filtrarPorTipo('casa')" id="radioCasa" />
+    <label for="casa" class="alinha">Casa</label>
+
+
+
+
+    <section class="results">
+        @for(imovel of imoveisDB; track $index){
+        <section class="listing">
+            <img class="listing-photo" src="{{imovel.url_foto}}" alt="Foto">
+            <h2 class="listing-heading">{{imovel.nome}}</h2>
+            <p class="listing-location">{{imovel.cidade}} - {{imovel.estado}}</p>
+            <a [routerLink]="['/detalhes', imovel.id]">Veja mais</a>
+            <img src="mapa.png" alt="mapa" class="favorito" (click)="abrirMapa(imovel)">
+            @if (imovel.favorito == false){
+            <img class="favorito" src="naofavorito.png" alt="coração" (click)="favoritar(imovel)">
+            }@else{
+            <img class="favorito" src="favorito.png" alt="coração" (click)="favoritar(imovel)">
+            }
+        </section>
+
+        }
+
+    </section>
+
+</section>
