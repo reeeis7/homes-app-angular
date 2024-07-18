@@ -29,7 +29,11 @@ export class ImovelService {
               "chave":"Piscina",
               "valor":"sim"
           }
-      ]
+      ],
+      "aluguel":[{
+        "chave":"Alguel Mensal",
+        "valor": 4000.00
+      }]
   },
 
   {
@@ -47,7 +51,9 @@ export class ImovelService {
               "chave":"Banheiro",
               "valor": 1
           }  
-      ]
+      ],
+      "aluguel":[{"chave": "Aluguel Mensal:",
+        "valor": 600.00}]
 
   },
 
@@ -68,7 +74,7 @@ export class ImovelService {
           },
           {
               "chave":"Piscina",
-              "valor":"sim"
+              "valor":"Sim"
           },
           {
               "chave":"Quintal",
@@ -79,7 +85,11 @@ export class ImovelService {
               "valor":"Frutiferas"
           }
 
-      ]
+      ],
+      "aluguel":[{
+        "chave": "Aluguel Mensal",
+        "valor": 1000.00,
+      }]
   },
 
   {
@@ -92,7 +102,11 @@ export class ImovelService {
       "tipo":"casa",
       "latitude": -22.5401794,
       "longitude": -47.8981288,
-      "adicionais":[]
+      "adicionais":[],
+      "aluguel":[{
+        "chave": "Aluguel Mensal",
+        "valor": 1000.00,
+      }]
   },
 
   {
@@ -105,7 +119,11 @@ export class ImovelService {
       "tipo":"casa",
       "latitude": -22.8061315,
        "longitude":  -47.2489363,
-      "adicionais":[]
+      "adicionais":[],
+      "aluguel":[{
+        "chave": "Aluguel Mensal",
+        "valor": 1000.00,
+      }]
   },
 
 
@@ -119,7 +137,11 @@ export class ImovelService {
       "tipo":"casa",
       "latitude": -22.7299163,
       "longitude":  -47.6780693,
-      "adicionais":[]
+      "adicionais":[],
+      "aluguel":[{
+        "chave": "Aluguel Mensal",
+        "valor": 1000.00,
+      }]
   },
 
   {
@@ -132,7 +154,11 @@ export class ImovelService {
       "tipo":"casa",
       "latitude": -22.8377102,
       "longitude":  -47.6742,
-      "adicionais":[]
+      "adicionais":[],
+      "aluguel":[{
+        "chave": "Aluguel Mensal",
+        "valor": 1000.00,
+      }]
   },
 
   {
@@ -145,7 +171,11 @@ export class ImovelService {
       "tipo":"casa",
       "latitude": -22.8336657,
       "longitude": -47.2494511,
-      "adicionais":[]
+      "adicionais":[],
+      "aluguel":[{
+        "chave": "Aluguel Mensal",
+        "valor": 1000.00,
+      }]
   },
   {
       "id": 9,
@@ -157,7 +187,11 @@ export class ImovelService {
       "tipo":"apartamento",
       "latitude": -22.8442427,
       "longitude":  -47.6806572,
-      "adicionais":[]
+      "adicionais":[],
+      "aluguel":[{
+        "chave": "Aluguel Mensal",
+        "valor": 1000.00,
+      }]
   },
 
   {
@@ -170,7 +204,11 @@ export class ImovelService {
       "tipo":"casa",
       "latitude": -22.835339,
       "longitude":  -47.6738834,
-      "adicionais":[]
+      "adicionais":[],
+      "aluguel":[{
+        "chave": "Aluguel Mensal",
+        "valor": 11000.00
+      }]
   },
 
 ] 
